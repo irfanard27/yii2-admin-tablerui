@@ -24,6 +24,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <link rel="stylesheet" href="https://unpkg.com/@tabler/core@latest/dist/css/tabler.min.css">
+    <link rel="stylesheet" href="<?= $this->registerCssFile(Yii::getAlias('@web') . '/css/tabler-icons.css') ?>" />
     <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js"></script>
 
 </head>
@@ -35,36 +36,7 @@ AppAsset::register($this);
         <?= $this->render("sidebar"); ?>
 
         <div class="page-wrapper">
-            <header>
-                <?php
-                NavBar::begin([
-                    'brandLabel' => Yii::$app->name,
-                    'brandUrl' => Yii::$app->homeUrl,
-                    'options' => [
-                        'class' => 'navbar navbar-expand-md navbar-light bg-light',
-                    ],
-                ]);
-                echo Nav::widget([
-                    'options' => ['class' => 'navbar-nav'],
-                    'items' => [
-                        ['label' => 'Home', 'url' => ['/site/index']],
-                        ['label' => 'About', 'url' => ['/site/about']],
-                        ['label' => 'Contact', 'url' => ['/site/contact']],
-                        Yii::$app->user->isGuest ? (['label' => 'Login', 'url' => ['/site/login']]
-                        ) : ('<li>'
-                            . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
-                            . Html::submitButton(
-                                'Logout (' . Yii::$app->user->identity->username . ')',
-                                ['class' => 'btn btn-link logout']
-                            )
-                            . Html::endForm()
-                            . '</li>'
-                        )
-                    ],
-                ]);
-                NavBar::end();
-                ?>
-            </header>
+            <?= $this->render("header"); ?>
 
             <main role="main" class="flex-shrink-0 mt-3">
                 <div class="container-xl">
