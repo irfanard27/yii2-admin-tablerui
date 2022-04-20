@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a973addecfa2040a73918abda938727c",
+    "content-hash": "138aa23748e6e5749e2bacd92120efd6",
     "packages": [
         {
             "name": "bower-asset/inputmask",
@@ -339,6 +339,51 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/v4.14.0"
             },
             "time": "2021-12-25T01:21:49+00:00"
+        },
+        {
+            "name": "irfanard27/tabler-ui",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/irfanard27/tabler-ui.git",
+                "reference": "3e23bf467a0f6b673890c0dc259ac2f6a18d207b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/irfanard27/tabler-ui/zipball/3e23bf467a0f6b673890c0dc259ac2f6a18d207b",
+                "reference": "3e23bf467a0f6b673890c0dc259ac2f6a18d207b",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "default-branch": true,
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "irfanard27\\TablerUi\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "irfan ardiansyah",
+                    "email": "ardiafire27@gmail.com"
+                }
+            ],
+            "description": "yii2 tabler UI",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/irfanard27/tabler-ui/issues",
+                "source": "https://github.com/irfanard27/tabler-ui/tree/master"
+            },
+            "time": "2022-04-20T13:58:41+00:00"
         },
         {
             "name": "npm-asset/bootstrap",
@@ -5465,7 +5510,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "irfanard27/tabler-ui": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

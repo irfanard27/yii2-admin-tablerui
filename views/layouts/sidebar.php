@@ -256,25 +256,13 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
-            <span class="nav-link-icon d-md-none d-lg-inline-block">
-              <!-- Download SVG icon from http://tabler-icons.io/i/lifebuoy -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="12" cy="12" r="4"></circle>
-                <circle cx="12" cy="12" r="9"></circle>
-                <line x1="15" y1="15" x2="18.35" y2="18.35"></line>
-                <line x1="9" y1="15" x2="5.65" y2="18.35"></line>
-                <line x1="5.65" y1="5.65" x2="9" y2="9"></line>
-                <line x1="18.35" y1="5.65" x2="15" y2="9"></line>
-              </svg>
-            </span>
             <span class="nav-link-title">
-              Help
+              Master
             </span>
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="./docs/index.html">
-              Documentation
+            <a class="dropdown-item" href="/unit">
+              Unit
             </a>
             <a class="dropdown-item" href="./changelog.html">
               Changelog

@@ -68,6 +68,14 @@ if (YII_ENV_DEV) {
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
+        'generators' => [ //here
+            'crud' => [ // generator name
+                'class' => 'yii\gii\generators\crud\Generator', // generator class
+                'templates' => [ //setting for out templates
+                    'tabler-ui' => '@app/vendor/irfanard27/tabler-ui/generators/crud/default', // template name => path to template
+                ]
+            ]
+        ],
     ];
 }
 
